@@ -1,0 +1,23 @@
+{
+  "name": "food_hover",
+  "version": "0.0.1",
+  "authors": [
+    "Vishnu B <vishnu.nxg@gmail.com>"
+  ],
+  "main": "app.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.1.1",
+    "neat": "~1.7.1"
+  }
+}
