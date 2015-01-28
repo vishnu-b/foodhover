@@ -26,7 +26,7 @@ module.exports = function(grunt){
 
         watch:{
             style: {
-                files: ['./app/assets/scss/main.scss'],
+                files: ['./app/assets/scss/main.scss', './app/assets/scss/variables.scss'],
                 tasks: ['sass', 'cssmin']
             },
             livereload: {

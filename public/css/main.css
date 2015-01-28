@@ -1,7 +1,101 @@
+@import "http://fonts.googleapis.com/css?family=Raleway";
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background: url("http://lorempixel.com/output/abstract-q-c-640-480-1.jpg") no-repeat;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 70px 30px;
+  color: #fff;
+  height: auto;
+  display: flex;
+  width: 100%;
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header .logo {
+  width: 33%;
+}
+header .logo img {
+  height: 90px;
+}
+header ul {
+  width: 67%;
+  line-height: 72px;
+  list-style: none;
+  float: right;
+  text-align: right;
+}
+header ul li {
+  font-size: 1.6rem;
+  display: inline;
+}
+header ul li a {
+  padding: 5px 10px;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+header ul li .register, header ul li .sign-in {
+  border: 1px solid #fff;
+}
+header ul li .sign-in {
+  margin-right: 0;
+}
+
+.header-image {
+  position: relative;
+  width: 100%;
+  background: url("http://www.cityhyd.info/wp-content/uploads/2013/02/Biryani.jpg") no-repeat;
   background-size: cover !important;
-  min-height: 34.375rem;
+  height: 60rem;
+}
+.header-image .image-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+}
+.header-image .image-overlay h1 {
+  margin: 0;
+  z-index: 10;
+  font-size: 5rem;
+  padding-top: 30rem;
+}
+.header-image .image-overlay p {
+  padding: 10px 70px 30px;
+  width: 40%;
+  margin: 0 auto;
+  position: relative;
+  font-size: 2rem;
+}
+
+.navigation {
+  display: flex;
+}
+.navigation .cook, .navigation .food {
+  width: 50%;
+  height: 300px;
+  font-size: 5rem;
+  color: #000;
+}
+.navigation .cook {
+  background-color: #fff;
+}
+.navigation .food {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
