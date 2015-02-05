@@ -4,7 +4,7 @@ module.exports = function(grunt){
             dist: {
                 options: {
                     style: 'expanded',
-                    loadPath: './bower_components/bourbon/app/assets/stylesheets/'
+                    loadPath: ['./bower_components/bourbon/app/assets/stylesheets/', './bower_components/neat/app/assets/stylesheets/']
                 },
                 files: {
                     './public/css/main.css' : './app/assets/scss/main.scss'
@@ -26,7 +26,7 @@ module.exports = function(grunt){
 
         watch:{
             style: {
-                files: ['./app/assets/scss/main.scss', './app/assets/scss/variables.scss'],
+                files: ['./app/assets/scss/*.scss', './app/assets/scss/variables.scss'],
                 tasks: ['sass', 'cssmin']
             },
             livereload: {

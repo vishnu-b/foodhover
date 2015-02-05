@@ -17,9 +17,10 @@ app.use('/', routes);
 
 module.exports = app;
 
-if(!module.parent) {
+if(module.parent === null) {
     var port = process.env.PORT | 3000;
     http.createServer(app).listen(port, function() {
         console.log("Server listening on port " + port);
     });
 }
+

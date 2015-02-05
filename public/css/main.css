@@ -1,5 +1,19 @@
 @import "http://fonts.googleapis.com/css?family=Raleway";
 html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  background: url("http://www.cityhyd.info/wp-content/uploads/2013/02/Biryani.jpg") no-repeat center center fixed;
+  background-size: cover;
   font-size: 62.5%;
 }
 
@@ -13,9 +27,11 @@ header {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 70px 30px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   height: auto;
-  display: flex;
   width: 100%;
   z-index: 9;
   position: absolute;
@@ -23,18 +39,52 @@ header {
   left: 0;
   right: 0;
 }
+header::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media screen and (max-width: 600px) {
+  header {
+    padding: 20px 40px 10px;
+  }
+}
 header .logo {
-  width: 33%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+header .logo:last-child {
+  margin-right: 0;
 }
 header .logo img {
   height: 90px;
 }
+@media screen and (max-width: 450px) {
+  header .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-align: center;
+  }
+  header .logo:last-child {
+    margin-right: 0;
+  }
+}
 header ul {
-  width: 67%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
   line-height: 72px;
   list-style: none;
   float: right;
   text-align: right;
+}
+header ul:last-child {
+  margin-right: 0;
 }
 header ul li {
   font-size: 1.6rem;
@@ -53,13 +103,28 @@ header ul li .register, header ul li .sign-in {
 header ul li .sign-in {
   margin-right: 0;
 }
+@media screen and (max-width: 450px) {
+  header ul {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding: 0;
+    line-height: 50px;
+    text-align: center;
+  }
+  header ul:last-child {
+    margin-right: 0;
+  }
+  header ul li {
+    float: none;
+  }
+}
 
 .header-image {
   position: relative;
   width: 100%;
-  background: url("http://www.cityhyd.info/wp-content/uploads/2013/02/Biryani.jpg") no-repeat;
-  background-size: cover !important;
-  height: 60rem;
+  height: 100%;
 }
 .header-image .image-overlay {
   width: 100%;
@@ -74,12 +139,32 @@ header ul li .sign-in {
   font-size: 5rem;
   padding-top: 30rem;
 }
+@media screen and (max-width: 768px) {
+  .header-image .image-overlay h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-image .image-overlay h1 {
+    padding-top: 20rem;
+  }
+}
 .header-image .image-overlay p {
   padding: 10px 70px 30px;
-  width: 40%;
   margin: 0 auto;
   position: relative;
   font-size: 2rem;
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .header-image .image-overlay p {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-image .image-overlay p {
+    padding: 5px 40px 10px;
+  }
 }
 
 .navigation {
